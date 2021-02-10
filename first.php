@@ -1,6 +1,7 @@
 <?php
 
-class calculation{
+class calculation
+{
     public $a, $b, $c;
 
     public function sum()
