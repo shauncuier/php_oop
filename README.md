@@ -38,7 +38,7 @@ Object-oriented programming has several advantages over procedural programming:
                     return $c;
                 }
                 sub(){
-                    $c = $a _ $b;
+                    $c = $a - $b;
                     return $c;
                 }
     
