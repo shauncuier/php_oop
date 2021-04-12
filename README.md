@@ -55,7 +55,8 @@ Object-oriented programming has several advantages over procedural programming:
           }
       }
 
-#### Define Objects
+### Define Objects
+
 
         class calculation
         {
@@ -88,7 +89,7 @@ Object-oriented programming has several advantages over procedural programming:
 
 ## PHP OOP - Constructor
 
-#### PHP - The \_\_construct Function
+### PHP - The \_\_construct Function
 
 A constructor allows you to initialize an object's properties upon creation of the object.
 
@@ -125,7 +126,7 @@ We see in the example below, that using a constructor saves us from calling the 
 
 ## PHP OOP - Inheritance
 
-#### PHP - What is Inheritance?
+### PHP - What is Inheritance?
 
 - Inheritance in OOP = When a class derives from another class.
 
@@ -178,9 +179,11 @@ Let's look at an example:
         $m1->info();
         $e1->info();
 
-### PHP OOP - Access Modifiers
+## PHP OOP - Access Modifiers
 
-####PHP - Access Modifiers
+### PHP - Access Modifiers
+
+
 Properties and methods can have access modifiers which control where they can be accessed.
 
 There are three access modifiers:
@@ -203,12 +206,9 @@ In the following example we have added three different access modifiers to the t
             }
         }
         $test = new base("3s-soft");
-
         // $test->name = "soft 3s";
         $test->show();
-
         // Protected
-
         class basePro {
             protected $namePro;
             public function __construct($n)
@@ -219,19 +219,14 @@ In the following example we have added three different access modifiers to the t
                 echo "Your Name: " . $this->namePro ."\n";
             }
         }
-
         class derived extends basePro{
             public function get(){
                 echo "Your Name: " . $this->namePro ."\n";
             }
         }
         $test = new derived("3s-soft");
-
-
         $test->get();
-
         // Private
-
         class basePri {
             private $namePri;
             public function __construct($n)
@@ -243,7 +238,6 @@ In the following example we have added three different access modifiers to the t
                 echo "Your Name: " . $this->namePri ."\n";
             }
         }
-
         class derivedPri extends basePri{
             public function get(){
                 echo "Your Name: " . $this->namePri ."\n";
@@ -275,9 +269,9 @@ An abstract class or method is defined with the abstract keyword:
     $test = new  childClass();
     $test->calc(12,14);
 
-### PHP OOP - Interfaces
+## PHP OOP - Interfaces
 
-#### PHP - What are Interfaces?
+### PHP - What are Interfaces?
 
 Interfaces allow you to specify what methods a class should implement.
 
